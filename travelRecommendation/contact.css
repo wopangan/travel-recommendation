@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #e7e7e7;
+    color: #1c2b2f;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+  
+.logo-img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #1c2b2f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+
+.contact-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 100px; /* Match .hero-content margin-left */
+    color: white;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+}
+  
+.contact-left {
+    flex: 1;
+    padding-right: 40px;
+    position: relative;
+    z-index: 2;
+}
+  
+.contact-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color: #f2f2f2; /* Softer white */
+}
+
+.contact-left p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc; /* Light gray for better contrast */
+    max-width: 480px;
+}
+  
+.contact-right {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    position: relative;
+    z-index: 2;
+    margin-right: 70px;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+  
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #555;
+}
+  
+.contact-form button {
+    padding: 12px;
+    background-color: #008080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+.contact-form button:hover {
+    background-color: #006666;
+}
