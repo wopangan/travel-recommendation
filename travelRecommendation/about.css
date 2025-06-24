@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #e7e7e7;
+    color: #1c2b2f;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+  
+.logo-img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #1c2b2f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 60px 40px 40px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('images/home-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Team Section */
+
+.team-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1c2b2f;
+}
+
+.team-section h2 span {
+    color: #008080;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.role-label {
+    display: inline-block;
+    background-color: #008080;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
