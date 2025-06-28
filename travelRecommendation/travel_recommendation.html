@@ -23,25 +23,23 @@
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="Enter a destination or keyword" />
       <span class="search-icon">🔍</span>
-      <button onclick="search()">Search</button>
-      <button onclick="resetSearch()">Clear</button>
+      <button id="searchBtn">Search</button>
+      <button id="clearBtn">Clear</button>
     </div>
   </nav>
 
-  <div class="main-content">
-    <section class="hero">
-      <div class="hero-content">
-        <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
-        <p>
-          It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, 
-          while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
-        </p>
-        <button>BOOK NOW</button>
-      </div>
-    </section>
-  
-    <div id="search-result"></div>
-  </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+      <p>
+        It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, 
+        while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+      </p>
+      <button>BOOK NOW</button>
+    </div>
+
+  </section>
+  <div id="search-result"></div>
 
   <script src="./travel_recommendation.js"></script>
 </body>
