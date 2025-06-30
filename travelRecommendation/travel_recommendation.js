@@ -72,23 +72,21 @@ function search() {
     return;
   }
 
-  // Cities
-  if (travelData.countries) {
+  // Countries data
+  if ((searchInput === "country" || searchInput === "countries") && travelData.countries) {
     travelData.countries.forEach((country) => {
       country.cities.forEach((city) => {
-        if (city.name.toLowerCase().includes(searchInput)) {
-          foundData = true;
-          const div = document.createElement("div");
-          div.innerHTML = `
-                    <img src="${city.imageUrl}" alt="${city.name}" />
-                    <h2>${city.name}</h2>
-                    <p>${city.description}</p>
-                    <button>Visit</button
-                `;
-          resultDiv.appendChild(div);
-        }
+        const div = document.createElement("div");
+        div.innerHTML = `
+                  <img src="${city.imageUrl}" alt="${city.name}" />
+                  <h2>${city.name}</h2>
+                  <p>${city.description}</p>
+                  <button>Visit</button
+              `;
+        resultDiv.appendChild(div);
       });
     });
+    return;
   }
 
   // Statement to show a message if no matching data found in beaches, temples, or cities
